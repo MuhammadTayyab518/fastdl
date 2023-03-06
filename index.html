@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CS:GO Server Page</title>
+    <link rel="stylesheet" href="style.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<style>
+		body {
+			padding-top: 4.5rem;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">CS:GO SERVERS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Server 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Server 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Server 3</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+		<h1 class="text-center">[RTX][Public] CSGO Community Servers</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Singapore</h2>
+				<p>Our server is running for the general public. Click the connect button blow to connect to the server.</p>
+				<button class="btn btn-success" onclick="connectToServer('8.219.58.211:27015')">Connect to Server</button>
+				<p>If you are getting and ingame error while downloading our servers files then you can download them from the given link.</p>
+				<a href="https://muhammadtayyab518.github.io/fastdl/SiteServerFiles/[RTX][Public].zip" download>Download Server Files</a>
+			</div>
+			<div class="col-md-6">
+				<h2>U.A.E</h2>
+				<p>Comming Soon.</p>
+				<!--<button class="btn btn-success" onclick="connectToServer('123.45.67.89:27016')">Connect to Server 2</button>
+				<p>Click the link below to download the Server 2 files:</p>
+				<a href="https://www.example.com/server2-files.zip" download>Download Server 2 Files</a> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<!-- Custom JavaScript -->
+<script>
+	function connectToServer(server) {
+		window.location.href = "steam://connect/" + server;
+	}
+</script>
+</body>
+</html>
+    
